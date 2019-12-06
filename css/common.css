@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Montez', cursive;
+    color: blue;
+    margin: 1px;
+}
+
+h6 {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 1px;
+}
+
+.headerbtn {
+    background-color: blue;
+    padding: 6px 8px;
+    color: white;
+}
+
+#commonheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
