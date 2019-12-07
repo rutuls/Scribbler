@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/common.js"></script>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 </head>
 
@@ -20,10 +21,89 @@
             <h6>Explore, Imagine, Create</h6>
         </div>
         <div id="headerbuttons">
-            <button type="button" class="headerbtn">Sign Up</button>
-            <button type="button" class="headerbtn">Sign In</button>
+            <button type="button" class="headerbtn" id="signupbutton" onclick="signupModal()">Sign Up</button>
+            <button type="button" class="headerbtn" id="signinbutton" onclick="signinModal()">Sign In</button>
         </div>
     </header>
+    <div id="signupmodal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Get Started</span><span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <hr>
+            <form>
+            <div class="modal-body">
+                <div>
+                    <label for="signupname" >Name</label><br>
+                    <input type="text" value="" id="signupname" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="signupusername">Username</label><br>
+                    <input type="text" value="" id="signupusername" placeholder="Enter your username" required>
+                </div>
+                <div>
+                    <label for="signuppassword" >Password</label><br>
+                    <input type="password" value="" id="signuppassword" placeholder="Enter your password" required>
+                </div>
+                <div>
+                    <label for="signuprepassword" >Confirm Password</label><br>
+                    <input type="password" value="" id="signuprepassword" placeholder="Re-enter your password" required>
+                </div>
+                <button id="signupmodalbtn" type="submit" class="modalbtn">Sign Up</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="signinmodal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Welcome Back!</span><span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <hr>
+            <form>
+            <div class="modal-body">
+                <div>
+                    <label for="signinusername">Username</label><br>
+                    <input type="text" value="" id="signinusername" placeholder="Enter your username" required>
+                </div>
+                <div>
+                    <label for="signinpassword" >Password</label><br>
+                    <input type="password" value="" id="signinpassword" placeholder="Enter your password" required>
+                </div>
+                <button id="signinmodalbtn" type="submit" class="modalbtn">Sign In</button>
+            </div>
+            </form>
+            <div class="modal-footer">
+                <span>Not a member? </span><a href="#signupmodal" onclick="signupModal(true)">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div class="btndiv">
+        <button id="allpostbtn" class="postbtn">All Posts</button>
+        <button id="createpostbtn" class="postbtn" onclick="createPostModal()">Create Post</button>
+    </div>
+        <div id="createpostmodal" class="modal">
+                <div class="modal-content-createpost">
+                    <div class="modal-header">
+                        <span class="modal-title">Pen Your Post</span><span class="close" onclick="closeModal()">&times;</span>
+                    </div>
+                    <hr>
+                    <form>
+                    <div class="modal-body">
+                        <div>
+                            <label for="posttitle">Title</label><br>
+                            <input type="text" value="" id="posttitle" placeholder="Enter title of your post" required>
+                        </div>
+                        <div>
+                            <label for="postcontent" >Contents</label><br>
+                            <textarea type="text" value="" id="postcontent" placeholder="Enter the content of your post" required></textarea>
+                        </div>
+                        <button id="postcreatebtn" type="submit" class="modalbtn">Create</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
 </body>
 
 </html>

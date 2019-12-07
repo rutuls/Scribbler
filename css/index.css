@@ -1,5 +1,21 @@
 body {
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 120%;
+}
+
+.btndiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:400px;
+}
+
+.postbtn {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+    width: 100px;
 }

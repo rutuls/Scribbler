@@ -4,6 +4,12 @@ h1 {
     margin: 1px;
 }
 
+.modal-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: x-large;
+}
+
 h6 {
     font-family: 'Ubuntu Mono', monospace;
     margin: 1px;
@@ -11,8 +17,9 @@ h6 {
 
 .headerbtn {
     background-color: blue;
-    padding: 6px 8px;
+    padding: 8px 10px;
     color: white;
+    text-align: center;
 }
 
 #commonheader {
@@ -20,3 +27,94 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    vertical-align: middle;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+  }
+
+  .modal-content-createpost {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  /* The Close Button */
+  .close {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaaaaa;
+    float: right;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+  }
+
+  input {
+    width: 100%;
+    height: 30px;
+    background: whitesmoke;
+    border: none;
+    margin: 10px 0px;
+  }
+
+  textarea {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: whitesmoke;
+      border: none;
+  }
+
+  .modalbtn {
+      width: 70px;
+      height:35px;
+      margin: auto;
+      background-color: green;
+      color:white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  }
+
+  .modal-footer {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  a {
+      text-decoration: none;
+  }
