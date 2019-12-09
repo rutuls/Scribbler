@@ -10,7 +10,12 @@ body {
     flex-direction: row;
     border-radius: 20px;
     margin: 40px;
+    box-shadow: grey;
 }
+
+.post-card:hover {
+    box-shadow: 0 0 40px rgba(33,33,33,.2); 
+  }
 
 .post-author{
     background-color: white;
@@ -54,4 +59,9 @@ p{
     color: grey;
     float: right;
     margin-right: 10px;
+}
+
+#delete-post{
+    margin: 10px;
+    cursor: pointer;
 }
