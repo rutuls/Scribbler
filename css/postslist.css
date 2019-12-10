@@ -11,6 +11,7 @@ body {
     border-radius: 20px;
     margin: 40px;
     box-shadow: grey;
+    flex: 0 1 30%;
 }
 
 .post-card:hover {
@@ -34,7 +35,7 @@ body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .post-title{
@@ -59,9 +60,19 @@ p{
     color: grey;
     float: right;
     margin-right: 10px;
+    cursor: pointer;
 }
 
-#delete-post{
-    margin: 10px;
-    cursor: pointer;
+.yes-btn{
+    background-color:green;
+    color:white;
+    width:60px;
+    height:40px;
+}
+
+.no-btn{
+    background-color: red;
+    color:white;
+    width: 60px;
+    height: 40px;
 }
