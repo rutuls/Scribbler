@@ -33,22 +33,22 @@
 
         <!-- post 1 starts here -->
         <div class="post-card" id="post1">
-            <div class="post-author">
+            <div class="post-author" id="post-author-1">
                 <p>Srishti Gupta</p>
             </div>
 
             <div class="post-content">
-                <div class="post-title">
+                <div class="post-title" id="title-1">
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fas fa-trash iconclass" id="1" onclick="deleteModal(this.id)"></i>
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <p id="desc-1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h iconclass" onclick="window.location.href='post.html'"></i>
+                    <i class="fas fa-ellipsis-h iconclass" id="1" onclick="openPost(this.id)"></i>
                 </span>
             </div>
         </div>
@@ -56,22 +56,22 @@
 
         <!-- post 2 starts here -->
         <div class="post-card" id="post2">
-            <div class="post-author">
+            <div class="post-author" id="post-author-2">
                 <p>Colby Fayock</p>
             </div>
 
             <div class="post-content">
-                <div class="post-title">
+                <div class="post-title" id="title-2">
                     <p>What is linting and how can it save you time?</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fas fa-trash iconclass" id="2" onclick="deleteModal(this.id)"></i>
                     </span>
                 </div>
-                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <p id="desc-2">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h iconclass" onclick="window.location.href='post.html'"></i>
+                    <i class="fas fa-ellipsis-h iconclass" id="2" onclick="openPost(this.id)"></i>
                 </span>
             </div>
         </div>
@@ -79,22 +79,22 @@
 
         <!-- post 3 starts here -->
         <div class="post-card" id="post3">
-            <div class="post-author">
+            <div class="post-author" id="post-author-3">
                 <p>Yazeed Bzadough</p>
             </div>
 
             <div class="post-content">
-                <div class="post-title">
+                <div class="post-title" id="title-3">
                     <p>How to Get More Views on Your Tech Blog</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fas fa-trash iconclass" id="3" onclick="deleteModal(this.id)"></i>
                     </span>
                 </div>
-                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <p id="desc-3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h iconclass" onclick="window.location.href='post.html'"></i>
+                    <i class="fas fa-ellipsis-h iconclass" id="3" onclick="openPost(this.id)"></i>
                 </span>
             </div>
         </div>
@@ -102,23 +102,23 @@
 
         <!-- post 4 starts here -->
         <div class="post-card" id="post4">
-            <div class="post-author">
+            <div class="post-author" id="post-author-4">
                 <p>Cedd Burge</p>
             </div>
 
             <div class="post-content">
-                <div class="post-title">
+                <div class="post-title" id="title-4">
                     <p>How to write easily describable code</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fas fa-trash iconclass" id="4" onclick="deleteModal(this.id)"></i>
                     </span>
                 </div>
-                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                <p id="desc-4">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h iconclass" onclick="window.location.href='post.html'"></i>
+                    <i class="fas fa-ellipsis-h iconclass" id="4" onclick="openPost(this.id)"></i>
                 </span>
             </div>
         </div>
@@ -126,23 +126,24 @@
 
         <!-- post 5 starts here -->
         <div class="post-card" id="post5">
-            <div class="post-author">
+            <div class="post-author" id="post-author-5">
                 <p>Srishti Gupta</p>
             </div>
 
             <div class="post-content">
-                <div class="post-title">
+                <div class="post-title" id="title-5">
                     <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fas fa-trash iconclass" id="5" onclick="deleteModal(this.id)"></i>
                     </span>
                 </div>
-                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                <p id="desc-5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h iconclass" onclick="window.location.href='post.html'"></i>
+                    <i id="5" class="fas fa-ellipsis-h iconclass" id="5" onclick="openPost(this.id)"></i>
+                    <!-- window.location.href='post.html' -->
                 </span>
             </div>
         </div>

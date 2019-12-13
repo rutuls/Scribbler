@@ -1,0 +1,18 @@
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+button {
+    background-color: #d11d53;
+    color:white;
+    width: 80px;
+    height: 40px;
+}
+
+#post-auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
