@@ -3,16 +3,68 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-family: monospace;
+    font-size: x-large;
+}
+
 button {
     background-color: #d11d53;
     color:white;
     width: 80px;
     height: 40px;
+    border: none;
 }
+
+button:hover {
+    box-shadow: 15px 30px 70px 1px #d11d53; 
+  }
 
 #post-auth {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 50px 0px 50px;
+}
+
+#post-desc {
+    margin: 0px 50px 0px 50px;
+}
+
+#post-title{
+    margin: 0px 50px 0px 50px;
+}
+
+#like-section {
+    margin: 50px 50px 20px 50px;
+}
+
+#comment-section {
+    margin: 50px 50px 20px 50px;
+}
+
+#comment-textarea {
+    height: 100px;
+    width:70%;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.comment {
+    margin: 10px;
+    height: 40px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+#all-comments{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: lightgrey;
+    width: 70%;
+    height: 100%;
 }

@@ -28,3 +28,24 @@ function saveContent() {
     document.getElementById('post-title').style.border = "none";       
 
 }
+
+var count = 0;
+function increaseLike() {
+    count++;
+    if (count === 1) {
+        document.getElementById('like-section').innerHTML =
+    `<button type="button" id="like-btn" onclick="increaseLike()"><i class="fas fa-thumbs-up"></i> Liked</button>`+
+    `<p id="like-text" style="font-family: monospace;">${count} person likes this!</p>`;
+    } else if (count > 1) {
+        document.getElementById('like-section').innerHTML =
+    `<button type="button" id="like-btn" onclick="increaseLike()"><i class="fas fa-thumbs-up"></i> Liked</button>`+
+    `<p id="like-text" style="font-family: monospace;">${count} people like this!</p>`;
+    }
+    
+}
+
+function addComment() {
+    var comment = document.getElementById('comment-textarea').value;
+    document.getElementById('all-comments').innerHTML += `<p class="comment">${comment}</p>`;
+    document.getElementById('comment-textarea').value='';
+}
