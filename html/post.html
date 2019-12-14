@@ -34,5 +34,17 @@
 
     <div id="post-desc">
     </div>
+
+    <div id="like-section">
+        <button type="button" id="like-btn" onclick="increaseLike()"><i class="fas fa-thumbs-up"></i> Like</button>
+        <p id="like-text" style="font-family: monospace;">Be the first one to like this!</p>
+    </div>
+
+    <div id="comment-section">
+        <textarea placeholder="Leave a comment..." id="comment-textarea"></textarea>
+        <button type="button" id="comment-btn" onclick="addComment()">Comment</button>
+        <h4>All Comments</h3>
+        <div id="all-comments"></div>
+    </div>
 </body>
 </html>

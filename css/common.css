@@ -99,14 +99,16 @@ h6 {
   }
 
   .modalbtn {
-      width: 70px;
+      width: 100%;
       height:35px;
       margin: auto;
-      background-color: green;
+      background-color: limegreen;
       color:white;
+      font-weight: bold;
       text-align: center;
       display: flex;
       justify-content: center;
+      border: none;
   }
 
   .modal-footer {
